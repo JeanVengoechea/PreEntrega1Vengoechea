@@ -14,12 +14,12 @@ function prestamoMaximo(prestamo, cuota, interes) {
     prestamoIdeal = (prestamo * cuota) * interes
 }
 prestamoMaximo(cuotaIdeal, cuotasMinimas, interesMinimo)
-alert(`Tu prestamo ideal es $${prestamoIdeal}`)
+console.log(`Tu prestamo ideal es $${prestamoIdeal}`)
 
 /* 3. Consulta de prestamo */
 let prestamoSolicitado = prompt("Por favor ingrese valor de prestamo a solicitar")
 Number(prestamoSolicitado)
-alert(`Tu prestamo solicitado es $${prestamoSolicitado}`)
+console.log(`Tu prestamo solicitado es $${prestamoSolicitado}`)
 
 
 while (prestamoSolicitado > prestamoIdeal) {
@@ -30,7 +30,7 @@ while (prestamoSolicitado > prestamoIdeal) {
 /* 4. Consultar cantidad de cuotas */
 let cuotasSolicitadas = prompt("Porfavor ingrese el numero de cuotas solicitadas")
 Number(cuotasSolicitadas)
-alert(`Las cuotas solicitadas para el prestamo son ${cuotasSolicitadas} cuotas`)
+console.log(`Las cuotas solicitadas para el prestamo son ${cuotasSolicitadas} cuotas`)
 
 /* 5. Calcular el interes del prestamo en base a las cuotas solicitadas */
 
