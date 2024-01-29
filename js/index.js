@@ -34,16 +34,16 @@ console.log(`Las cuotas solicitadas para el prestamo son ${cuotasSolicitadas} cu
 
 /* 5. Calcular el interes del prestamo en base a las cuotas solicitadas */
 
-let interes = 1.2
+let interes = 1.3
 
 if (cuotasSolicitadas <= 12) {
-    interesPrestamo = 1.2
-} else if (cuotasSolicitadas > 12 && cuotasSolicitadas <= 24) {
     interesPrestamo = 1.3
-} else if (cuotasSolicitadas > 24 && cuotasSolicitadas <= 36) {
+} else if (cuotasSolicitadas > 12 && cuotasSolicitadas <= 24) {
     interesPrestamo = 1.5
-} else if (cuotasSolicitadas > 36 && cuotasSolicitadas <= 48) {
+} else if (cuotasSolicitadas > 24 && cuotasSolicitadas <= 36) {
     interesPrestamo = 1.7
+} else if (cuotasSolicitadas > 36 && cuotasSolicitadas <= 48) {
+    interesPrestamo = 1.9
 } else {
     interesPrestamo = 2
 }
