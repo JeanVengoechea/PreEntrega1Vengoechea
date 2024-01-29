@@ -4,7 +4,7 @@ alert("Bienvenido al Banco Central")
 /* 2. Consulta de salario */
 const salario = prompt(`Por favor ingrese su salario`)
 Number(salario)
-alert(`Su salario es de $${salario}`)
+console.log(`Su salario es de $${salario}`)
 
 let cuotaIdeal = salario * 0.20
 let interesMinimo = 2
